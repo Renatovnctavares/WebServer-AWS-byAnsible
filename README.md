@@ -46,16 +46,15 @@ The description below has been used to create as kick out to run the playbook an
 # Step two - Repository
  Download of this repo and run this project
 
- $ git clone <this repo>   
+ $ git clone https://github.com/Renatovnctavares/WebServer-AWS-byAnsible.git   
 
 # Step three - Running
  Run this project inside of the "WebServer-AWS-byAnsible" directory:
 
  $ ansible-playbook -i inventory project.yml
 
- once finished this script is gonna create the file "url_loadbalance_httpd.txt" in the same directory. 
 
 # Step four - Check out
  check out the acess URL into the file created.
-  
+
  $ cat url_loadbalance_httpd.txt
