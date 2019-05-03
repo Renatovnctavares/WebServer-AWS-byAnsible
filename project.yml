@@ -188,22 +188,15 @@
         name: git-all
         state: present
 
-
     - name: Clonar repositorio GIT
       git:
         repo: 'https://github.com/Renatovnctavares/WebServer-AWS-byAnsible.git'
         dest: /var/www/html/
 
-    - name: Create default index page
-      copy:
-        dest: /var/www/html/index.html
-        content: "SERVER WEB HAS BEEN CREATED by ansible!! -Server:{{ ansible_hostname }} - Renato Tavares 04/2019 <br> check out the script on: /WebServer-AWS-byAnsible/project.yml"
-
     - name: Restart httpd
       systemd:
         name: httpd
         state: restarted
-
 
     - name: Disable SELinux
       shell:
