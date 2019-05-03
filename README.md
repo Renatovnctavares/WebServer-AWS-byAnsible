@@ -13,7 +13,9 @@ The description below has been used to create as kick out to run the playbook an
  ### Python 
  python 2.7.14
  ### Boto
- boto/boto3 (1.9.130)
+ boto 2.49.0
+ boto3 1.9.140
+ botocore 1.12.140
  ### SSH
  ssh-agent (ensure agent is runing) 
 
