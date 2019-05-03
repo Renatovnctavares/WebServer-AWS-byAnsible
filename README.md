@@ -13,13 +13,13 @@ The description below has been used to create as kick out to run the playbook an
  ### Python 
  python 2.7.14
  ### Boto
- boto 2.49.0
- boto3 1.9.140
+ boto 2.49.0, 
+ boto3 1.9.140, 
  botocore 1.12.140
  ### SSH
  ssh-agent (ensure agent is runing) 
 
- + how to:
+ + how to install:
 
  Ansible:
  https://aws.amazon.com/pt/blogs/mt /running-ansible-playbooks-using-ec2-systems-manager-run-command-and-state-manager/
@@ -44,11 +44,12 @@ The description below has been used to create as kick out to run the playbook an
  Download of this repo and run this project
  $ git clone <this repo>   
 
-# Running
+# Step three - Running
  Run this project inside of the "WebServer-AWS-byAnsible" directory:
  $ ansible-playbook -i inventory project.yml
 
  once finished this script is gonna create the file "url_loadbalance_httpd.txt" in the same directory. 
 
-# Check out
- check out the acess URL into the file created.   
+# Step four - Check out
+ check out the acess URL into the file created. 
+ $ cat url_loadbalance_httpd.txt
